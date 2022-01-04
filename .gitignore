@@ -1,8 +1,8 @@
 
-# Créé par https://www.toptal.com/developers/gitignore/api/vs
-# Modifier sur https://www.toptal.com/developers/gitignore?templates=vs
+# Créé par https://www.toptal.com/developers/gitignore/api/visualstudio
+# Modifier sur https://www.toptal.com/developers/gitignore?templates=visualstudio
 
-### vs ###
+### Visual Studio ###
 ## Ignorer les fichiers temporaires de Visual Studio, générer les résultats et
 ## fichiers générés par les modules complémentaires Visual Studio populaires.
 ##
@@ -28,6 +28,7 @@ mono_crash.*
 [Rr]libère/
 x64/
 x86/
+[Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
@@ -66,6 +67,9 @@ project.lock.json
 project.fragment.lock.json
 artefacts/
 
+# Échafaudage ASP.NET
+ScaffoldingReadMe.txt
+
 # StyleCop
 StyleCopReport.xml
 
@@ -91,6 +95,7 @@ StyleCopReport.xml
 *.tmp_proj
 *_wpftmp.csproj
 *.Journal
+*.tlog
 *.vspscc
 *.vssscc
 .construit
@@ -143,7 +148,9 @@ _TeamCity*
 !.axoCover/settings.json
 
 # Coverlet est un outil de couverture de code gratuit et multiplateforme
-couverture*[.json, .xml, .info]
+couverture*.json
+couverture*.xml
+couverture*.info
 
 # Résultats de couverture de code Visual Studio
 *.couverture
@@ -203,6 +210,9 @@ Scripts de publication/
 # Les fichiers project.json de NuGet v3 produisent plus de fichiers ignorables
 *.nuget.props
 *.nuget.targets
+
+# Jetons d'accès personnels Nuget et identifiants
+# nuget.config
 
 # Sortie de construction Microsoft Azure
 csx/
@@ -357,4 +367,32 @@ MigrationSauvegarde/
 # Dossier de travail Ionide (outils multiplateformes F# VS Code)
 .ionide/
 
-# Fin de https://www.toptal.com/developers/gitignore/api/vs.
+# Fody - schéma XML généré automatiquement
+FodyWeavers.xsd
+
+# Fichiers VS Code pour ceux qui travaillent sur plusieurs outils
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-espace de travail
+
+# Historique local pour le code Visual Studio
+.l'histoire/
+
+# Fichiers Windows Installer à partir des sorties de build
+*.taxi
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Pilote JetBrains
+.idée/
+*.sln.iml
+
+### Patch VisualStudio ###
+# Fichiers supplémentaires créés par Visual Studio
+
+# Fin de https://www.toptal.com/developers/gitignore/api/visualstudio.
